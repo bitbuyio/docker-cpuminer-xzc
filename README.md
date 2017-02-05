@@ -18,7 +18,7 @@ The address of the mining pool see below for details:
 * MaxMiners [https://xzc.maxminers.net/]
 
 ###Pool Port
-The startum Port of the pool being used.
+The stratum Port of the pool being used.
 
 ###Username
 Worker username at the pool
