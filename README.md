@@ -34,5 +34,6 @@ See the pool mining guide at https://github.com/zcoinofficial/zcoin/wiki/Pool-Mi
 Did this container make your life easier, buy me a coffee:
 
   BTC: 3H6bvf9ZZ4PJoebGxBef9Kw92P88KsEaxF
+
   XZC: a46WE4GECjXWEGjbHWRGBLSCzhiuYsUFgH
 
