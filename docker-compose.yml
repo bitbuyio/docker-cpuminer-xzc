@@ -1,3 +1,6 @@
 Miner:
   image: wesseloc/docker-cpuminer-xzc
-  command: ./cpuminer -a lyra2rev2  -o stratum+tcp://[Pool Address]:[Pool Port]  -u [username] -p [password]
+  environment:
+     - URL=[Pool URL]
+     - USERNAME=[Username]
+     - PASSWORD=[Password]

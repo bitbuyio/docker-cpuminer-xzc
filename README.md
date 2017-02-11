@@ -1,11 +1,11 @@
 # docker-cpuminer-xzc
-Docker Container that runs https://github.com/Optiminer/cpuminer-xzc
+Docker Container that runs https://github.com/zcoinofficial/cpuminer-xzc
 
 ##Run
 
-Replace the [Pool Address], [Pool Port], [Username] and [Password] with your own values and run
+Replace the [Pool URL], [Username] and [Password] with your own values and run
 
-```docker run --name miner -d wesseloc/docker-cpuminer-xzc ./cpuminer -a lyra2rev2  -o stratum+tcp://[Pool Address]:[Pool Port]  -u [username] -p [password]```
+```docker run --name miner -d -e URL=[Pool URL] -e USERNAME=[Username] -e PASSWORD=[Password] wesseloc/docker-cpuminer-xzc ```
 
 ##Terminology
 
@@ -16,9 +16,6 @@ The address of the mining pool see below for details:
 * Pool.mn [https://pool.mn/xzc/]
 * Suprnova [https://xzc.suprnova.cc/]
 * MaxMiners [https://xzc.maxminers.net/]
-
-###Pool Port
-The stratum Port of the pool being used.
 
 ###Username
 Worker username at the pool

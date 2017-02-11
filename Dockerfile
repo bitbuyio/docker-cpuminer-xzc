@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /opt
 
 #Clone the repo
-RUN git clone https://github.com/Optiminer/cpuminer-xzc.git
+RUN git clone https://github.com/zcoinofficial/cpuminer-xzc
 
 WORKDIR  /opt/cpuminer-xzc
 
@@ -25,7 +25,7 @@ WORKDIR  /opt/cpuminer-xzc
 RUN ./autogen.sh && ./configure CFLAGS="-march=native" --with-crypto --with-curl && make
 
 #Commands to run
-CMD ["./cpuminer --help"]
+CMD ./cpuminer -a lyra2z  -o stratum+tcp://$URL  -u $USERNAME -p $PASSWORD
 
 
 
