@@ -1,6 +1,4 @@
-FROM phusion/baseimage:0.9.19
-
-MAINTAINER Wessel Pieterse <jimfromsa<at>gmail<dot>com>
+FROM phusion/baseimage:0.9.22
 
 #Install required packages
 RUN apt-get update && apt-get install -y \
