@@ -1,4 +1,5 @@
-FROM phusion/baseimage:0.9.22
+# FROM phusion/baseimage:0.9.22
+FROM ubuntu:16.04
 
 #Install required packages
 RUN apt-get update && apt-get install -y \
